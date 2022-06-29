@@ -1,0 +1,77 @@
+.btn {
+    user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.btn-rect {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 216px;
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+    transition: all .3s ease;
+    white-space: nowrap;
+    padding: 16px 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn-blue {
+    background-color: $blue-d;
+    color: $white-bg;
+    border: 1px solid $blue-d;
+}
+
+.btn-blue:hover {
+    background-color: $blue-dh;
+    border: 1px solid $blue-dh;
+}
+
+button:disabled,
+button[disabled]{
+    background-color: $blue-dis;
+    cursor: not-allowed;
+    pointer-events: none;
+    border: 1px solid transparent;
+}
+
+.btn-white-blue {
+    background-color: transparent;
+    color: $blue-d;
+    border: 1px solid $blue-d;
+}
+
+.btn-white-blue:hover {
+    background-color: $blue-sh;
+    color: $blue-d;
+    border: 1px solid $blue-sh;
+}
+
+.btn-white-black {
+    background-color: transparent;
+    color: $black-t;
+    border: 1px solid $black-t;
+}
+
+.btn-white-black:hover {
+    background-color: $gray-l;
+    border: 1px solid $gray-t;
+}
+
+.btn-white-red {
+    background-color: transparent;
+    color: $red;
+    border: 1px solid $red;
+}
+
+.btn-white-red:hover {
+    background-color: $red;
+    color: $white-bg;
+}

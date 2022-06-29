@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    position: relative;
+    min-height: 100%;
+    background: transparent;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+.main {
+    padding-top: 95px;
+
+    @include sm {
+        padding-top: 1px;
+    }
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &[href] {
+        cursor: pointer;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+picture {
+    display: block;
+}
+
+/* Remove shadow from fields for WebKit browsers */
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+    appearance: none;
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    max-width: $container-width;
+    padding: 0 $container-padding;
+    margin: 0 auto;
+
+    @include sm-down() {
+        padding: 0 $container-padding-csx;
+    }
+}
+
+.text-m {
+   @include font-base($fw: 500,$fz: 32px, $lh: 40px);
+    color: $black-t;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
