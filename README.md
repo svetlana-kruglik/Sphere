@@ -1,5 +1,5 @@
-# Shere
-Shere
+# Sphere
+Sphere
 
 ## Features
 * [Gulp](https://gulpjs.com) as a build system
